@@ -87,12 +87,12 @@ The pipeline is built using a layered Medallion Architecture:
 ---
 ## 📁 Repository Structure
 
-### 📌 Notes
-- The `consolidated_pipeline.zip` file contains all pipeline notebooks structured by Bronze, Silver, and Gold layers.
-- The `data.zip` file includes sample datasets used for ingestion and testing.
-- Notebooks can be imported directly into Databricks workspace for execution.
-- Data files simulate ingestion from external storage systems like Amazon S3.
+## 📌 Notes
 
+- `1_setup/` contains initial setup scripts for catalogs, schemas, and reusable utilities.
+- `2_dim_data_processing/` handles data cleaning, transformation, and loading for dimension tables.
+- `3_fact_data_processing/` includes both full load and incremental load logic for fact table processing.
+- Incremental load script updates only new or changed data using merge (upsert) logic.
 
 
 ## 👩‍💻 Author
