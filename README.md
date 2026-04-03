@@ -67,7 +67,7 @@ The pipeline is built using a layered Medallion Architecture:
 - Data quality checks and standardization  
 - Schema alignment across datasets  
 - Aggregation for business reporting  
-
+- BI dashboard  
 ---
 
 ## 📈 Use Case
@@ -85,12 +85,15 @@ The pipeline is built using a layered Medallion Architecture:
 - Creating analytics-ready datasets  
 
 ---
+## 📁 Repository Structure
 
-## 📎 Future Enhancements
-- Add real-time data processing (streaming)  
-- Build BI dashboards (Power BI / Tableau)  
+### 📌 Notes
+- The `consolidated_pipeline.zip` file contains all pipeline notebooks structured by Bronze, Silver, and Gold layers.
+- The `data.zip` file includes sample datasets used for ingestion and testing.
+- Notebooks can be imported directly into Databricks workspace for execution.
+- Data files simulate ingestion from external storage systems like Amazon S3.
 
----
+
 
 ## 👩‍💻 Author
 **Shejal Aute**  
